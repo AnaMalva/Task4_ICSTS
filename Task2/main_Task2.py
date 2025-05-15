@@ -1,6 +1,6 @@
 import time
 import numpy as np
-from Task2.bitalino import BITalino
+from Task2.bitalino import *
 import matplotlib.pyplot as plt
 
 def get_signals():
@@ -57,3 +57,5 @@ def get_signals():
 
     # Desconectar Bitalino
     device.close()
+
+    return all_data

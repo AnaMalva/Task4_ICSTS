@@ -1,7 +1,7 @@
 import os
 
 
-#from Task2.main_Task2 import *
+from Task2.main_Task2 import *
 from Task3.main_Task3 import *
 
 
@@ -20,6 +20,8 @@ headers = {
     "Content-Type": "application/fhir+json",
     "Accept": "application/fhir+json"
 }
+
+data=get_signal=()
 
 diff_expiration,diff_inspiration, diag=get_data(num)
 
