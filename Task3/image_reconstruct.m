@@ -52,12 +52,7 @@ imdl.fwd_model.meas_select = msel;
 
 for set=1:9
 
-    if set<9
-        folderPath = "C:/Users/anama/OneDrive/Ambiente de Trabalho/UNI/Semestre2/ICSTS/Task3/BRACETS Bimodal Repository of Auscultation Coupled with Electrical Impedance Thoracic Signals/BRACETS/Data/0" + int2str(i) + "/EIT";
-    else
-        folderPath = "C:/Users/anama/OneDrive/Ambiente de Trabalho/UNI/Semestre2/ICSTS/Task3/BRACETS Bimodal Repository of Auscultation Coupled with Electrical Impedance Thoracic Signals/BRACETS/Data/" + int2str(set) + "/EIT";
-    end
-        
+    folderPath = "C:/Users/anama/OneDrive/Ambiente de Trabalho/UNI/Semestre2/ICSTS/Task3/BRACETS Bimodal Repository of Auscultation Coupled with Electrical Impedance Thoracic Signals/BRACETS/Data/0" + int2str(set) + "/EIT";        
 
     files = dir(fullfile(folderPath, '*.eit'));
 
