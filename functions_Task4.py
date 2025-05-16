@@ -170,6 +170,41 @@ def observations_upload(headers, num, patient_id,diff_expiration,diff_inspiratio
     				"display": "diferença de expiração"
     			}
     		]
+        }
+    	},
+        {
+        "resourceType": "Observation",
+    	"status": "final",
+    	"code": {
+    		"coding": [
+    			{
+    				"system": "http://loinc.org",
+    				"code": "29463-7",
+    				"display": "diferença de expiração"
+    			}
+    		]
+    	},
+    	"subject": {
+    		"reference": "Patient/" + str(patient_id) #ID IMPORTANT
+    	},
+    	"effectiveDateTime": "2016-03-28",
+    	"valueQuantity": {
+    		"value": diff_inspiration,
+    		"unit": "∆Z",
+    		"system": "http://unitsofmeasure.org", 
+    		"code": "[lb_av]"}
+        },
+        {
+        "resourceType": "Observation",
+    	"status": "final",
+    	"code": {
+    		"coding": [
+    			{
+    				"system": "http://loinc.org",
+    				"code": "29463-7",
+    				"display": "diferença de expiração"
+    			}
+    		]
     	},
     	"subject": {
     		"reference": "Patient/" + str(patient_id) #ID IMPORTANT
